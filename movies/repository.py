@@ -6,8 +6,8 @@ from login.service import logout
 class MovieRepository:
 
     def __init__(self):
-        self.__base_url = 'https://pycodebr.pythonanywhere.com/api/v1/'
-        self.__movies_url = f'{self.__base_url}movies/'
+        self.__base_url = 'http://127.0.0.1:8000/api/v1/'
+        self.__movies_url = f'{self.__base_url}movie/'
         self.__headers = {
             'Authorization': f'Bearer {st.session_state.token}'
         }
